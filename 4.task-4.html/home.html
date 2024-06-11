@@ -1,0 +1,50 @@
+<html>
+    <head>
+        <title>
+            HOMEPAGE
+        </title>
+        <style>
+            
+            body{
+        
+                background-image: url("https://images.unsplash.com/photo-1560179707-f14e90ef3623?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8Y29tcGFueSUyMGJ1aWxkaW5nfGVufDB8fDB8fHww");
+                 padding:5;
+            }
+        </style>
+        <script>
+            function myfunction() {
+              var  uname=document.myform.username.value;
+              var pword=document.myform.password.value;
+                         if(uname==null|| uname==""){
+                                   alert("username cant be null")
+                                    return false;
+              
+                         }else if(pword.length<6){
+                                   alert("password cannot cannot be less than 6")
+                                   return false;
+              
+                         }else{
+                               return true;
+                              }
+            }
+              
+
+        </script>
+    </head>
+    <body>
+        <center>
+            <form name="myform" action="contactusweb.html"
+                onsubmit="return myfunction(this)">
+                
+        
+                <h3><label>USERNAME:-<input type="text" name="username" placeholder="username"></label><br></br>
+                    <h3><label>PASSWORD:-<input type="password" name="password" placeholder="password"></label><br></br>
+                     <button><i>Submit</i></button>
+        <button><a href="file:///C:/Users/ashaj/OneDrive/Desktop/UI%20%20development/1.Html/2.project/mywebsite.html/forgetpass.html">forgetpassword</a></button>
+        </center>
+        <h1>Residential Building</h1>
+        <h1>Live comfortabily and happily</h1>
+        <h1>make your children to grow in an healthy environment</h1>
+    </form>
+    </body>
+</html>
